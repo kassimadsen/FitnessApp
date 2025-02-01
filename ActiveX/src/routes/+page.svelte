@@ -1,8 +1,13 @@
 <script lang="ts">
-	import Anchor from '$lib/components/Anchor.svelte';
+	import Button from '$lib/components/Button.svelte';
 	import Hero from './Hero.svelte';
 </script>
 
 <Hero />
-<Anchor href="/contact">This week's programme</Anchor>
-<Anchor href="/generate">Generate a programme</Anchor>
+<Button
+	onclick={() => {
+		console.log('track that a user clicked this');
+	}}
+	href="/contact">Contact</Button
+>
+<Button href="/generate">Generate a program</Button>

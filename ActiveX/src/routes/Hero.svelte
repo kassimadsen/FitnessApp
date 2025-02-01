@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Anchor from '$lib/components/Anchor.svelte';
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <div class="stack h-[50svh] bg-gradient-to-br from-orange-500 via-orange-300 to-teal-500">
@@ -10,6 +10,6 @@
 		>
 			ActiveX
 		</h1>
-		<Anchor href="/programme">See this week's programme</Anchor>
+		<Button href="/program">See this week's program</Button>
 	</div>
 </div>
