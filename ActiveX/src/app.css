@@ -2,9 +2,18 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+:root {
+	color-scheme: light;
+	--background-color: #ffffff;
+}
+
+[data-theme='dark'] {
+	color-scheme: dark;
+	--background-color: #000000;
+}
+
 html {
-	font-size: 2rem;
-	background-color: papayawhip;
+	background-color: var(--background-color);
 }
 
 /* Inspired by Smolcss by stephanie */
