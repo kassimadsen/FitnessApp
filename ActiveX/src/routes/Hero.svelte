@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Button from '$lib/components/Button.svelte';
+	import {Button} from '$lib/components/ui/button';
 </script>
 
 <div class="stack h-[50svh] bg-gradient-to-br from-orange-500 via-orange-300 to-teal-500">

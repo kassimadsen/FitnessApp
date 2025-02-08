@@ -3,6 +3,7 @@
 	import {Button, type ButtonRootProps} from 'bits-ui';
 
 	type Props = {
+		href: string;
 		children: Snippet;
 	} & ButtonRootProps;
 	let {children, ...restProps}: Props = $props();
