@@ -10,6 +10,6 @@
 		>
 			ActiveX
 		</h1>
-		<Button href="/program">See this week's program</Button>
+		<Button size="lg" href="/program">See this week's program</Button>
 	</div>
 </div>
