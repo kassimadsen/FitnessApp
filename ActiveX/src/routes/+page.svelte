@@ -4,7 +4,7 @@
 </script>
 
 <Hero />
-<section class="flex items-center justify-center gap-4 py-8">
+<section class="container flex items-center justify-center gap-4 py-8">
 	<Button
 		variant="outline"
 		onclick={() => {

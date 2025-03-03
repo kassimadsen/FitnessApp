@@ -9,7 +9,7 @@ const config: Config = {
 	theme: {
 		container: {
 			center: true,
-			padding: "2rem",
+			padding: "var(--padding-inline)",
 			screens: {
 				"2xl": "1400px"
 			}
@@ -68,6 +68,9 @@ const config: Config = {
 			},
 			fontFamily: {
 				sans: [...fontFamily.sans]
+			},
+			padding: {
+				inline: 'var(--padding-inline)'
 			},
 			keyframes: {
 				"accordion-down": {

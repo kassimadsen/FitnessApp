@@ -5,8 +5,60 @@
 @tailwind utilities;
 
 @layer base {
+	/* 
+		Additonal "resets" based on Josh's:
+		https://www.joshwcomeau.com/css/custom-css-reset/
+	*/
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+
+	* {
+		@apply border-border;
+	}
+
+	body {
+		-webkit-font-smoothing: antialiased;
+		isolation: isolate;
+
+		@apply bg-background text-foreground;
+	}
+
+	input,
+	button,
+	textarea,
+	select {
+		font: inherit;
+	}
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		overflow-wrap: break-word;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-wrap: balance;
+	}
+
+	p {
+		text-wrap: pretty;
+	}
+
 	:root {
 		--radius: 0.5rem;
+		--padding-inline: clamp(1rem, 5vs, 3rem);
 	}
 
 	:root,
@@ -65,16 +117,10 @@
 		--chart-4: 280 65% 60%;
 		--chart-5: 340 75% 55%;
 	}
-}
 
-@layer base {
-	* {
-		@apply border-border;
-	}
-	body {
-		@apply bg-background text-foreground;
-	}
-
+	/* inspired by Stephanie 
+	https://smolcss.dev/#smol-stack-layout
+	*/
 	.stack {
 		display: grid;
 		grid-template-areas: 'stack';

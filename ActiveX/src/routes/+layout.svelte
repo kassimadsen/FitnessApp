@@ -5,7 +5,7 @@
 	let {children} = $props();
 </script>
 
-<header class="flex items-center justify-between">
+<header class="px-inline flex items-center justify-between">
 	<Button variant="ghost" href="/">ActiveX</Button>
 	<Button
 		variant="ghost"
